@@ -25,6 +25,8 @@ module.exports.authenticateDatabase = () => {
       console.log("Database Connected");
     })
     .catch((err) => {
-      console.log("err");
+      console.log(`An error occured: ${err}`);
     });
 };
+
+module.exports.database = db;
