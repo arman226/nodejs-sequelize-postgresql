@@ -23,7 +23,7 @@ authenticateDatabase();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 app.listen(PORT, console.log(`server running on port ${PORT}`));
